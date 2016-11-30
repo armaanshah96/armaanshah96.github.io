@@ -1,0 +1,324 @@
+/*****************************************************        CSS DEFAULTS     */
+* {
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+
+html {
+    background-color: #efefef;
+    font-family: 'Raleway', 'Montserrat','Lato', sans-serif;
+    font-weight:300;
+}
+
+
+/*****************************************************        GENERAL STYLES     */
+.clear { 
+    clear:both; 
+} 
+
+.clear-left {
+    clear:left;
+}
+
+.right {
+    float:right;
+}
+
+.left { 
+    float: left; 
+}
+
+.aligned {
+    text-align: center;
+}
+
+.leftalign {
+    text-align: left;
+}
+
+.inlined {
+    display: inline-block;
+}
+
+.blocked {
+    display:block;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.inherits {
+    width:inherit;
+    padding:inherit;
+}
+
+/*****************************************************        Font-Sizes     */
+.giga {
+    font-size: 5.5em;
+}
+
+.mega {
+    font-size:5em;
+}
+
+h1 {
+    font-size: 4em;
+    color: #1d84b5;
+    font-family: 'Varela Round';
+}
+
+h2 {
+    font-size:3em;
+}
+
+h3 {
+    font-size:2em;
+}
+
+h4 {
+    font-size:1.8em;
+}
+
+h5 {
+    font-size:1.6em;
+}
+
+h6 {
+    font-size:1.4em;
+}
+
+/*****************************************************        NAV     */
+.navbar {
+    background-color: #fbfbfb;
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 0 2em;
+    width: 100%;
+}
+
+.navstyle {
+    display:inline-block;
+    padding: 0 .9em;
+}
+
+.icon {
+    width: 2.5em;
+}
+
+/*****************************************************        RECURRING STYLES     */
+section {
+    padding:7rem 0;
+}
+
+.product-img {
+    margin:3rem 0;
+    border-radius:5px;
+}
+
+.product {
+    padding: 3rem 0;
+}
+
+.product-title {
+    font-size:3em;
+    font-weight:600;
+}
+
+.product-description {
+    font-size:1.6em;
+}
+
+.thin {
+    font-weight:300;
+}
+/*****************************************************        CONTENT SECTION     */
+#content {
+    color: #828282;
+    padding: 7em 5em 5em 5em;
+}
+
+
+.invis {
+    color: #efefef;
+}
+
+.invis:hover {
+    color: #828282;
+    font-weight:300;
+}
+
+.subtitle {
+    font-weight: 600;
+}
+
+/*****************************************************        DESIGNWORKS     */
+.site-section {
+    background-color: white;
+    border-radius:5px;
+    margin:0 auto;
+}
+
+.dw-img, .description {}
+/*****************************************************        Colors+Borders     */
+.red {color: #C23C15;}
+.blue {color: #1d84b5;}
+.purple {color: #8916CC;}
+.orange {color: #C29E1E;}
+.green {color: #1FCC16;}
+
+.red-border {border: 1px solid #C23C15;}
+.blue-border {border: 1px solid #1d84b5;}
+.purple-border {border: 1px solid #8916CC;}
+.orange-border {border: 1px solid #C29E1E;}
+.green-border {border: 1px solid #1FCC16;}
+.gray-border {border: 1px solid #e7e7e7;}
+
+
+/******************************************************         Grid     */
+.col-1 {width: 6.25%;}
+.col-2 {width: 12.5%;}
+.col-3 {width: 18.75%;}
+.col-4 {width: 25%;}
+.col-5 {width: 31.25%;}
+.col-6 {width: 37.5%;}
+.col-7 {width: 43.75%;}
+.col-8 {width: 50%;}
+.col-9 {width: 56.25%;}
+.col-10 {width: 62.5%;}
+.col-11 {width: 68.75%;}
+.col-12 {width: 75%;}
+.col-13 {width: 81.25%;}
+.col-14 {width: 87.5%;}
+.col-15 {width: 93.75%;}
+.col-16 {width: 100%;}
+
+/* LEFT offest */
+.col-offset-16 {margin-left: 100%;}
+.col-offset-15 {margin-left: 93.75%;}
+.col-offset-14 {margin-left: 87.5%;}
+.col-offset-13 {margin-left: 81.25%;}
+.col-offset-12 {margin-left: 75%;}
+.col-offset-11 {margin-left: 68.75%;}
+.col-offset-10 {margin-left: 62.5;}
+.col-offset-9 {margin-left: 56.25%;}
+.col-offset-8 {margin-left: 50%;}
+.col-offset-7 {margin-left: 43.75%;}
+.col-offset-6 {margin-left: 37.5%;}
+.col-offset-5 {margin-left: 31.25%;}
+.col-offset-4 {margin-left: 25%;}
+.col-offset-3 {margin-left: 18.75%;}
+.col-offset-2 {margin-left: 12.5%;}
+.col-offset-1 {margin-left: 6.25%;}
+.col-offset-0 {margin-left: 0%;}
+
+/* RIGHT offest */
+.rcol-offset-16 {margin-right: 100%;}
+.rcol-offset-15 {margin-right: 93.75%;}
+.rcol-offset-14 {margin-right: 87.5%;}
+.rcol-offset-13 {margin-right: 81.25%;}
+.rcol-offset-12 {margin-right: 75%;}
+.rcol-offset-11 {margin-right: 68.75%;}
+.rcol-offset-10 {margin-right: 62.5;}
+.rcol-offset-9 {margin-right: 56.25%;}
+.rcol-offset-8 {margin-right: 50%;}
+.rcol-offset-7 {margin-right: 43.75%;}
+.rcol-offset-6 {margin-right: 37.5%;}
+.rcol-offset-5 {margin-right: 31.25%;}
+.rcol-offset-4 {margin-right: 25%;}
+.rcol-offset-3 {margin-right: 18.75%;}
+.rcol-offset-2 {margin-right: 12.5%;}
+.rcol-offset-1 {margin-right: 6.25%;}
+.rcol-offset-0 {margin-right: 0%;}
+
+/******************************************************         Responsive     */
+
+@media screen and (max-width:1140px) {
+    .product-description {
+        font-size:1.4em;
+    }
+}
+
+@media screen and (max-width:1040px) {
+    .product-description {
+        font-size:1.2em;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .product-title {
+        font-size:2.5em;
+    }
+    .product-description {
+        font-size:1em;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .product-img {
+/*      cannot change margin with one statement*/
+        margin-top:2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .product {
+        padding:2.5rem 0;
+    }
+    .product-title {
+        font-size:2em;
+    }
+}
+
+@media screen and (max-width:750px) {
+}
+
+@media screen and (max-width:650px) {
+    section {
+        padding:4rem 0;
+    }
+    
+    .hidden-wrap {
+        display:inline-block;
+    }
+    .medium-col-offset-2 {
+        margin-left:12.5%;
+    }
+    .medium-col-12 {
+        width:75%;
+    }
+    
+    .rmedium-col-offset-2 {
+        margin-right:12.5%;
+    }
+    .rmedium-col-12 {
+        width:75%;
+    }
+    
+    .product-img {
+        margin-bottom: 1rem;
+    }
+    .product {
+        padding:0 0 1rem 0;
+    }
+    .product-title {
+        font-size: 2.3em;
+    }
+    .product-description {
+        padding: 1rem 0;
+        font-size: 1.2em;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+
+}
+
+@media screen and (max-width:500px) {
+    .product-title {
+        font-size:1.2em;
+    }
+}
+
+@media screen and (max-width:470px) {}
