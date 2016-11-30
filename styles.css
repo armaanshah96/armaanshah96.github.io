@@ -54,6 +54,10 @@ html {
     padding:inherit;
 }
 
+.no-decoration {
+    text-decoration: none;
+}
+
 ul {
     list-style: none;
 }
@@ -121,6 +125,7 @@ section {
     padding:7rem 0;
     color:#828282;
     margin: 0 0 3em 0;
+    clear:both;
 }
 
 .product-img {
