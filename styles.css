@@ -150,7 +150,7 @@ section {
 #content {
     color: #828282;
     padding: 9em 0 0em 0;
-
+    margin: 0 0;
 }
 
 .main-text {
@@ -178,6 +178,10 @@ section {
     padding:3em 2em 3em 2em;
 }
 /*****************************************************        DESIGNWORKS     */
+#dwsite {
+    padding-top:4em;
+}
+
 .site-section {
     background-color: white;
     border-radius:5px;
@@ -300,19 +304,14 @@ section {
 }
 
 @media screen and (max-width:750px) {
-}
-
-@media screen and (max-width:650px) {
-    .icon {
-        width:1.5em;
-        height:2.5em;
-    }
-    .nav-name
     section {
         padding:4rem 0;
         margin: 0 0;
-
     }
+}
+
+@media screen and (max-width:650px) {
+    
     .hidden-wrap {
         display:inline-block;
     }
@@ -347,16 +346,14 @@ section {
 }
 
 @media screen and (max-width:600px) {
-    .icon {
-        width:1em;
-        height:2.5em;
-    }
+    
 }
 
 @media screen and (max-width:500px) {
-    .icon {
-        width:.8em;
-        height:2.5em;
+    .nav-name {
+        clear:both;
+        float:left;
+        margin-right:0;
     }
     .product-title {
         font-size:1.3em;
@@ -364,4 +361,9 @@ section {
     
 }
 
-@media screen and (max-width:470px) {}
+@media screen and (max-width:470px) {
+    .icon {
+        width:1em;
+        height:2.5em;
+    }
+}
