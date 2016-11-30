@@ -6,7 +6,7 @@
 }
 
 html {
-    background-color: #efefef;
+    background-color: #e0e6eb;
     font-family: 'Raleway', 'Montserrat','Lato', sans-serif;
     font-weight:300;
 }
@@ -54,6 +54,10 @@ html {
     padding:inherit;
 }
 
+ul {
+    list-style: none;
+}
+
 /*****************************************************        Font-Sizes     */
 .giga {
     font-size: 5.5em;
@@ -95,7 +99,7 @@ h6 {
     position: fixed;
     display: block;
     margin: 0 auto;
-    padding: 0 0 0 2em;
+    padding: 1em 0;
     width: 100%;
 }
 
@@ -104,13 +108,18 @@ h6 {
     padding: 0 .9em;
 }
 
+.nav-name {
+    font-family: 'Varela Round', sans-serif;
+}
 .icon {
-    width: 2.5em;
+    width: 2em;
 }
 
 /*****************************************************        RECURRING STYLES     */
 section {
     padding:7rem 0;
+    color:#828282;
+    margin: 0 0 3em 0;
 }
 
 .product-img {
@@ -134,12 +143,19 @@ section {
 .thin {
     font-weight:300;
 }
+.medium {
+    font-weight:600;
+}
 /*****************************************************        CONTENT SECTION     */
 #content {
     color: #828282;
-    padding: 7em 5em 5em 5em;
+    padding: 9em 0 0em 0;
+
 }
 
+.main-text {
+    margin: 0 auto;
+}
 
 .invis {
     color: #efefef;
@@ -151,9 +167,16 @@ section {
 }
 
 .subtitle {
-    font-weight: 600;
+    font-weight: 400;
 }
 
+.works {
+    text-align: center;
+}
+
+.work-logo {
+    padding:3em 2em 3em 2em;
+}
 /*****************************************************        DESIGNWORKS     */
 .site-section {
     background-color: white;
@@ -166,13 +189,13 @@ section {
 .red {color: #C23C15;}
 .blue {color: #1d84b5;}
 .purple {color: #8916CC;}
-.orange {color: #C29E1E;}
+.orange {color: #ff9f30;}
 .green {color: #1FCC16;}
 
 .red-border {border: 1px solid #C23C15;}
 .blue-border {border: 1px solid #1d84b5;}
 .purple-border {border: 1px solid #8916CC;}
-.orange-border {border: 1px solid #C29E1E;}
+.orange-border {border: 1px solid #ff9f30;}
 .green-border {border: 1px solid #1FCC16;}
 .gray-border {border: 1px solid #e7e7e7;}
 
@@ -235,6 +258,12 @@ section {
 
 /******************************************************         Responsive     */
 
+@media screen and (min-width:1100) {
+    section {
+        padding: 10rem 0 0 0;
+    }
+}
+
 @media screen and (max-width:1140px) {
     .product-description {
         font-size:1.4em;
@@ -274,10 +303,16 @@ section {
 }
 
 @media screen and (max-width:650px) {
+    .icon {
+        width:1.5em;
+        height:2.5em;
+    }
+    .nav-name
     section {
         padding:4rem 0;
+        margin: 0 0;
+
     }
-    
     .hidden-wrap {
         display:inline-block;
     }
@@ -312,13 +347,21 @@ section {
 }
 
 @media screen and (max-width:600px) {
-
+    .icon {
+        width:1em;
+        height:2.5em;
+    }
 }
 
 @media screen and (max-width:500px) {
-    .product-title {
-        font-size:1.2em;
+    .icon {
+        width:.8em;
+        height:2.5em;
     }
+    .product-title {
+        font-size:1.3em;
+    }
+    
 }
 
 @media screen and (max-width:470px) {}
