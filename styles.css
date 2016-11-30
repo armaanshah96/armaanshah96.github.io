@@ -95,12 +95,13 @@ h6 {
 
 /*****************************************************        NAV     */
 .navbar {
-    background-color: #fbfbfb;
+    background-color: #fff;
     position: fixed;
     display: block;
     margin: 0 auto;
     padding: 1em 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .navstyle {
@@ -188,7 +189,16 @@ section {
     margin:0 auto;
 }
 
-.dw-img, .description {}
+/*****************************************************        Footer        */
+footer a{
+    text-decoration: none;
+}
+footer h6 {
+    bottom:0;
+    padding:1em;
+    background-color: #fff;
+}
+
 /*****************************************************        Colors+Borders     */
 .red {color: #C23C15;}
 .blue {color: #1d84b5;}
