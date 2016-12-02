@@ -3,7 +3,8 @@
 // create the module and name it scotchApp
 var app = angular.module('app', ['ngRoute']);
 
-app.config(function($routeProvider, $locationProvider) {
+//app.config(function($routeProvider, $locationProvider) {
+app.config(function($routeProvider) {
     $routeProvider
         //route for the home page
         .when('/', {
@@ -23,7 +24,7 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl: 'views/contact.html',
             controller: 'contactController'
         });
-        $locationProvider.html5Mode(true);
+//        $locationProvider.html5Mode(true);
 
 });
 
@@ -42,5 +43,23 @@ app.controller('aboutController', function($scope) {
 
 app.controller('contactController', function($scope) {
     $scope.message ="contact";
+});
+
+app.directive('scrollOnClick', function() {
+  return {
+    restrict: 'A',
+    link: function(scope, $elm, attrs) {
+      var idToScroll = attrs.href;
+      $elm.on('click', function() {
+        var $target;
+        if (idToScroll) {
+          $target = $(idToScroll);
+        } else {
+          $target = $elm;
+        }
+        $("body").animate({scrollTop: $target.offset().top}, "slow");
+      });
+    }
+  }
 });
 
