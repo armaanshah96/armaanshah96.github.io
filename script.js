@@ -1,7 +1,7 @@
 // script.js
 
 // create the module and name it scotchApp
-var app = angular.module('app', ['ngRoute']);
+var app = angular.module('app', ['ngRoute', 'smoothScroll']);
 
 //app.config(function($routeProvider, $locationProvider) {
 app.config(function($routeProvider) {
