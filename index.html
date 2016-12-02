@@ -1,118 +1,32 @@
 
 <!DOCTYPE html>
-<html>
+<html ng-app=app>
   <head>
     <meta description="Hey! I'm Armaan." charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Lato:300,400|Raleway:300,400,600,800|Varela+Round" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800|Varela+Round" rel="stylesheet">    
     <title >Armaan Shah</title>
     <link  rel="stylesheet" href="styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link  rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="script.js"></script>
   </head>
-  <body >
+  <body ng-controller="mainController">
       <div class="navbar gray-border">
         <nav >
             <ul >
                 <li class="navstyle col-offset-1"><a href="https://www.linkedin.com/in/armaan-shah-108a77106
-"><img class="icon" src="./icons/svg/linkedin.svg" > </a></li>
-                <li class=navstyle><a href="https://github.com/armaanshah96"><img class="icon" src="./icons/svg/github.svg" > </a></li>
-                <li class=navstyle><a href="mailto:armaanshah96@gmail.com"><img class="icon" src="./icons/svg/mailbox.svg" > </a></li>
-<!--                <li class=navstyle><a href="https://www.facebook.com/armaan.shah.77"><img class="icon" src="./icons/svg/facebook.svg" > </a></li>-->
-                <li class="rcol-offset-0 navstyle right"><a class=no-decoration href=#content><h3 class="blue medium nav-name">armaan shah</h3></a></li>
+"><img class="icon" src="./img/social-icons/linkedin.png" > </a></li>
+                <li class=navstyle><a href="https://github.com/armaanshah96"><img class="icon" src="./img/social-icons/github.png" > </a></li>
+                <li class=navstyle><a href="mailto:armaanshah96@gmail.com"><img class="icon" src="./img/social-icons/mailbox.png" > </a></li>
+<!--                <li class=navstyle><a href="https://www.facebook.com/armaan.shah.77"><img class="icon" src="./img/social-icons/facebook.png" > </a></li>-->
+                <li class="rcol-offset-0 navstyle right"><a class=no-decoration href='/about'><h3 class="blue medium nav-name">armaan shah</h3></a></li>
             </ul>
         </nav>
       </div>
-      <section id="content" class=col-16>
-            <div class="col-14 main-text">
-                <h1 class="primary">armaan shah</h1>
-                <h3 class=subtitle><span class=orange>hi</span>, my name is <span  class=blue>armaan</span>.  take a look at my most recent <span class=red>work</span> below. drop a <span  class=green>line</span>. let's <span class=purple>collaborate</span>.</h3>
-                <ul class="works col-16">
-                    <li class="work-logo inlined"><a href="#dwsite"><img  src="img/logos/dwlogo.png" class=col-16></a></li>
-                    <li class="work-logo inlined"><a href="#escape"><img  src="img/logos/escape-logo.png" class=col-16></a></li>
-                    <li class="work-logo inlined"><a href="#metrics"><img src="img/logos/metrics-logo.png" class=col-16></a></li>
-                    <li class="work-logo inlined"><a href="#curate"><img  src="img/logos/curate-logo2.png" class=col-16></a></li>
-                </ul>
-                <h3 class=subtitle></h3>
-            </div>
-      </section>
+      <div ng-view></div>
 
-      <section id=dwsite>   
-        <div class="site-section col-14 red-border">
-            <div class=hidden-wrap><a href="http://www.designworks.nu"><img  src="img/portfolio/DWImage.png" class="product-img medium-col-offset-2 col-offset-1 medium-col-12 col-7 gray-border left clear-left inlined "></a></div>
-            <div class="medium-col-offset-2 col-offset-1 product medium-col-12 col-6 inlined">
-                <a href="http://www.designworks.nu" class=no-decoration><h2 class="red product-title col-16">designworks</h2></a>
-                <h5 class="thin product-description col-16">
-                    <span class=blue>front-end developer </span>-> the business of our sales and the creativity of our design expressed as a direct, to-the-point <a href="http://www.designworks.nu" class=blue>website</a> (with a colorful personality)
-                </h5>
-            </div>
-        </div>  
-      </section>
       
-      <section id=escape>   
-        <div class="site-section col-14 purple-border">
-            <div class=hidden-wrap><a href="https://github.com/gauravsk3/escape_datascience"><img src="img/portfolio/escape.png" class="product-img rcol-offset-1 rmedium-col-offset-2 rmedium-col-12 col-7 gray-border right clear-right inlined "></a></div>
-            <div class="medium-col-offset-2 col-offset-1 product medium-col-12 col-6 inlined">
-                <a href="https://github.com/gauravsk3/escape_datascience" class=no-decoration><h2 class="purple product-title col-16">escape</h2></a>
-                <h5 class="thin product-description col-16">
-                    <span class=blue>manager + developer </span>-> an itinerary generator to make the most of each day in Cape Town, South Africa all packaged into an <a href="https://github.com/gauravsk3/escape_datascience" class=blue>API</a> for easy access
-                </h5>
-            </div>
-        </div>  
-      </section>
-      
-      <section id=metrics>   
-        <div class="site-section col-14 orange-border">
-            <div class=hidden-wrap><a href="https://ashah.shinyapps.io/DwDashboard/"><img src="img/portfolio/kpidash.png" class="product-img medium-col-offset-2 col-offset-1 medium-col-12 col-7 gray-border left clear-left inlined "></a></div>
-            <div class="medium-col-offset-2 col-offset-1 product medium-col-12 col-6 inlined">
-                <a href="https://ashah.shinyapps.io/DwDashboard/" class=no-decoration><h2 class="orange product-title col-16">kpi dash</h2></a>
-                <h5 class="thin product-description col-16">
-                    <span class=blue>data analytics developer </span>-> a dashboard to track all financial and sales metrics for designworks. tabulated and visualized in an <a href="https://ashah.shinyapps.io/DwDashboard/" class=blue>R shiny app</a> (with example data).
-                </h5>
-            </div>
-        </div>  
-      </section>
-      
-      <section id=curate>   
-        <div class="site-section col-14 green-border">
-            <div class=hidden-wrap><a href="https://github.com/armaanshah96/cuRate"><img  src="img/portfolio/curate.png" class="product-img rcol-offset-1 rmedium-col-offset-2 rmedium-col-12 col-7 gray-border right clear-right inlined "></a></div>
-            <div class="medium-col-offset-2 col-offset-1 product medium-col-12 col-6 inlined">
-                <a href="https://github.com/armaanshah96/cuRate" class=no-decoration><h2 class="green product-title col-16">curate</h2></a>
-                <h5 class="thin product-description col-16">
-                    <span class=blue>developer </span>-> get your bite-sized update on your favorite twitter handles in your very own channel via <a href="https://github.com/armaanshah96/cuRate" class=blue>slack webhook</a>.
-                </h5>
-            </div>
-        </div>  
-      </section>
-      <footer class=col-16>
-        <a class=col-4 href=#content><h6 class="blue col-16 medium gray-border clear centered aligned">back to top</h6></a>
-      </footer>
-    <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-    </script>
   </body>
-<!--
-    
--->
 </html>
