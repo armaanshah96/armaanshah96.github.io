@@ -234,9 +234,12 @@ section {
 }
 
 .meta {
-    clear:both;
-    padding: 2em 0 0 0;
     font-size: 1.8em;
+}
+
+.meta-wrap {
+    clear:both;
+    padding: 2em 0;
 }
 /*****************************************************        Footer        */
 footer a{
