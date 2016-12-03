@@ -21,6 +21,17 @@ html {
     clear:left;
 }
 
+.clear-right {
+    clear:right;
+}
+
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
 .right {
     float:right;
 }
@@ -106,6 +117,23 @@ h6 {
 p {
     font-size:1em;
 }
+
+.thin {
+    font-weight:300;
+}
+.normal {
+    font-weight: 400;
+}
+.medium {
+    font-weight:600;
+}
+.thick {
+    font-weight: 800;
+}
+
+.title-font {
+    font-family: "Varela Round", sans-serif;
+}
 /*****************************************************        NAV     */
 .navbar {
     background-color: #fff;
@@ -120,7 +148,6 @@ p {
 .navstyle {
     display:inline-block;
     padding: 0 .9em;
-
 }
 
 .nav-name {
@@ -133,9 +160,7 @@ p {
 
 /*****************************************************        RECURRING STYLES     */
 section {
-    padding:7rem 0;
     color:#828282;
-    margin: 0 0 3em 0;
     clear:both;
 }
 
@@ -156,19 +181,6 @@ section {
 
 .product-description {
     font-size:1.6em;
-}
-
-.thin {
-    font-weight:300;
-}
-.normal {
-    font-weight: 400;
-}
-.medium {
-    font-weight:600;
-}
-.thick {
-    font-weight: 800;
 }
 
 /*****************************************************        CONTENT SECTION     */
@@ -200,7 +212,7 @@ section {
 }
 
 .contact-logo {
-    padding: 0 1em;
+    padding:3em 2em 3em 2em;
 }
 
 .works {
@@ -210,7 +222,7 @@ section {
 .work-logo {
     padding:3em 2em 3em 2em;
 }
-/*****************************************************        DESIGNWORKS     */
+/*****************************************************        Section Specific     */
 #dwsite {
     padding-top:4em;
 }
@@ -221,6 +233,11 @@ section {
     margin:0 auto;
 }
 
+.meta {
+    clear:both;
+    padding: 2em 0 0 0;
+    font-size: 1.8em;
+}
 /*****************************************************        Footer        */
 footer a{
     text-decoration: none;
@@ -304,12 +321,6 @@ footer h6 {
 
 /******************************************************         Responsive     */
 
-@media screen and (min-width:1100) {
-    section {
-        padding: 10rem 0 0 0;
-    }
-}
-
 @media screen and (max-width:1140px) {
     .product-description {
         font-size:1.4em;
@@ -341,14 +352,13 @@ footer h6 {
         padding:2.5rem 0;
     }
     .product-title {
-        font-size:2em;
+        font-size:2.3em;
     }
 }
 
 @media screen and (max-width:750px) {
     section {
-        padding:4rem 0;
-        margin: 0 0;
+        padding:2rem 0;
     }
 }
 
@@ -390,7 +400,9 @@ footer h6 {
 }
 
 @media screen and (max-width:600px) {
-    
+    .meta {
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -400,7 +412,10 @@ footer h6 {
         margin-right:0;
     }
     .product-title {
-        font-size:1.3em;
+        font-size:1.6em;
+    }
+    .meta {
+        font-size: 1em;
     }
     
 }
@@ -413,7 +428,29 @@ footer h6 {
 
 @media screen and (max-width:400px) {
     .navstyle {
+        padding: 0 .2em;
+    }
+    
+}
+
+@media screen and (max-width:350px) {
+    .navstyle {
         padding: 0 .4em;
+    }
+    .icon {
+        width: 1.5em;
+    }
+    .nav-name {
+        font-size:1.5em;;
+    }
+    
+}
+
+@media screen and (max-width:320px) {
+
+    .nav-name {
+/*        float: left;*/
+        clear:both;
     }
     
 }
