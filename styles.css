@@ -13,6 +13,10 @@ html {
 
 
 /*****************************************************        GENERAL STYLES     */
+.no-clear {
+    clear:none;
+}
+
 .clear { 
     clear:both; 
 } 
@@ -73,12 +77,25 @@ ul {
     list-style: none;
 }
 
-[ng-click],
-[data-ng-click],
-[x-ng-click] {
-    cursor: pointer;
+button {
+    background-color: white;
+    border-radius: 5px;
+    font-size:1.5rem;
+    color: #828282;
 }
 
+button:hover {
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+    background-color: #8916CC;
+    color: white;
+    cursor:pointer;
+}
+button:focus {
+    outline:0;
+}
 /*****************************************************        Font-Sizes     */
 .giga {
     font-size: 5.5em;
@@ -164,13 +181,27 @@ section {
     clear:both;
 }
 
+.logo-tag {
+    position:absolute;
+    top:-2.8em;
+    left:-2.8em;
+}
+
 .product-img {
     margin:3rem 0;
     border-radius:5px;
 }
 
+.product-img-hover:hover {
+    border:5px solid #e7e7e7;
+}
+
+.hidden-wrap {
+    display: inline-block;
+}
+
 .product {
-    padding: 3rem 0;
+    margin: 3rem 0;
 }
 
 .product-title {
@@ -217,24 +248,66 @@ section {
 
 .works {
     text-align: center;
+    padding:3em 0;
 }
 
+
 .work-logo {
-    padding:3em 2em 3em 2em;
+/*    padding: 3em 0;*/
 }
+
+.work-logo > a img:hover {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+/*    border-bottom: 4px solid #828282;*/
+}
+
+.custom-button {
+    position: absolute;
+    top: 100px;
+    left: 48%;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color:black;
+ 
+}
+
 /*****************************************************        Section Specific     */
 #dwsite {
-    padding-top:4em;
+    padding-top:1em;
 }
 
 .site-section {
     background-color: white;
     border-radius:5px;
-    margin:0 auto;
+    margin:2em auto;
+    position:relative;
+
+}
+
+.generate-button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.escape-event {
+    border-radius: 5px;
+    padding: 1em 0 1em 1em;
+    margin-top:1em;
 }
 
 .meta {
     font-size: 1.8em;
+}
+
+.meta-wrap p {
+    padding: .3em 0;
 }
 
 .meta-wrap {
@@ -247,7 +320,7 @@ footer a{
 }
 footer h6 {
     bottom:0;
-    padding:1em;
+    padding:1em 0;
     background-color: #fff;
 }
 
@@ -257,13 +330,14 @@ footer h6 {
 .purple {color: #8916CC;}
 .orange {color: #ff9f30;}
 .green {color: #1FCC16;}
+.gray {color: #828282;}
 
 .red-border {border: 1px solid #C23C15;}
 .blue-border {border: 1px solid #1d84b5;}
 .purple-border {border: 1px solid #8916CC;}
 .orange-border {border: 1px solid #ff9f30;}
 .green-border {border: 1px solid #1FCC16;}
-.gray-border {border: 1px solid #e7e7e7;}
+.gray-border {border: 1px solid #e1e1e1;}
 
 
 /******************************************************         Grid     */
@@ -326,7 +400,7 @@ footer h6 {
 
 @media screen and (max-width:1140px) {
     .product-description {
-        font-size:1.4em;
+        font-size:1.3em;
     }
 }
 
@@ -351,9 +425,11 @@ footer h6 {
         margin-top:2.5rem;
         margin-bottom: 2.5rem;
     }
+/*
     .product {
         padding:2.5rem 0;
     }
+*/
     .product-title {
         font-size:2.3em;
     }
@@ -369,7 +445,7 @@ footer h6 {
     .me-img {
         width:75%;
     }
-    .hidden-wrap {
+    .about-img-wrap {
         display:inline-block;
     }
     .medium-col-offset-2 {
@@ -389,9 +465,11 @@ footer h6 {
     .product-img {
         margin-bottom: 1rem;
     }
+/*
     .product {
         padding:0 0 1rem 0;
     }
+*/
     .product-title {
         font-size: 2.3em;
     }
