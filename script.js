@@ -1,20 +1,20 @@
 // script.js
 
 // create the module and name it scotchApp
-var app = angular.module('app', ['ngRoute', 'smoothScroll']);
+var app = angular.module('app', ['ngRoute', 'smoothScroll', 'ngSanitize']);
 
 //app.config(function($routeProvider, $locationProvider) {
 app.config(function($routeProvider) {
     $routeProvider
         //route for the home page
-        .when('/', {
+        .when('/work', {
             templateUrl: 'views/home.html',
             controller: 'mainController'
         })
 
         // route for the about page
 
-        .when('/about', {
+        .when('/', {
             templateUrl: 'views/about.html',
             controller: 'aboutController'
         })
@@ -60,6 +60,28 @@ app.controller('mainController', function($scope, $location, $anchorScroll, $htt
 });
 app.controller('aboutController', function($scope) {
     $scope.message ="about";
+    var clicked = false;
+    $scope.metalog = function() {
+        clicked = !clicked;
+        if(clicked) {
+            $scope.log = " log"
+            $scope.updates = [
+                {
+                    "date":"12/14/16",
+                    "note": "now you can check out the escape itinerary generator. go easy on the 'test it' button though, aws ec2 instances aren't that expensive until they are ",
+                    "emoji":"&#128513"
+                },
+                {
+                    "date": "12/3/16",
+                    "note": "i've been conflicted between being concise and personal. the current iteration of this site is an attempt to briefly express what i've been upto, what i believe in, and what i aspire towards through experimental design. it can always use work, so i'll keep working. "
+                }
+            ];
+        } else {
+            $scope.log=null;
+            $scope.updates =null;
+            $scope.emoji = null;
+        }
+    }
 });
 
 app.controller('contactController', function($scope) {

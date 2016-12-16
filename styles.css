@@ -200,6 +200,11 @@ section {
     display: inline-block;
 }
 
+.about-desc {
+    margin-top: 3rem;
+/*    margin-bottom: 1rem;*/
+}
+
 .product {
     margin: 3rem 0;
 }
@@ -208,6 +213,10 @@ section {
     font-size:3em;
     font-weight:600;
     font-family: 'Varela Round', sans-serif;
+}
+
+.no-decoration > .product-title:hover {
+    text-decoration: underline;
 }
 
 .product-description {
@@ -239,11 +248,12 @@ section {
 }
 
 .contact {
-    margin-top:5em;
+    margin-top:2em;
+    margin-bottom: 2em;
 }
 
 .contact-logo {
-    padding:3em 2em 3em 2em;
+    padding:3em 2em;
 }
 
 .works {
@@ -304,6 +314,7 @@ section {
 
 .meta {
     font-size: 1.8em;
+    cursor:pointer;
 }
 
 .meta-wrap p {
@@ -327,9 +338,9 @@ footer h6 {
 /*****************************************************        Colors+Borders     */
 .red {color: #C23C15;}
 .blue {color: #1d84b5;}
-.purple {color: #8916CC;}
-.orange {color: #ff9f30;}
-.green {color: #1FCC16;}
+.purple {color: #873eb1;}
+.orange {color: #ed932b;}
+.green {color: #48b542;}
 .gray {color: #828282;}
 
 .red-border {border: 1px solid #C23C15;}

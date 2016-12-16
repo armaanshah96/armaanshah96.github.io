@@ -1,19 +1,34 @@
 <section id=content>    
     <div class="col-14 main-text">
-        <h1 class="primary"><a class="no-decoration blue" href='#about'>armaan shah</a></h1>
-        <h3 class=subtitle><a href='#about' class="gray no-decoration medium">hi</a>, my name is <a href='#about' class="no-decoration gray">armaan</a>. take a <a href='#/' class="green">look</a> at my work. drop a line. let's <a href='#contact' class=purple>collaborate</a>.</h3>
-        <div class=about-img-wrap><img src="img/propic.jpg" class="product-img me-img medium-col-offset-2 col-offset-2 medium-col-8 col-5 blue-border left clear-left inlined "></div>
-        <div class="medium-col-offset-2 col-offset-1 product medium-col-12 col-7 inlined">
+        <h1 class="primary">armaan shah</h1>
+        <h3 class=subtitle><a href='#/' class="gray no-decoration medium">hi</a>, my name is <a href='#/' class="no-decoration gray">armaan</a>. take a <a href='#work' class="green">look</a> at my work. drop a line. let's <a href='#contact' class=orange>collaborate</a>.</h3>
+        <div class=about-img-wrap><img src="img/propic.jpg" class="product-img me-img medium-col-offset-2 col-offset-1 medium-col-8 col-8 blue-border left clear-left inlined "></div>
+        <div class="medium-col-offset-2 col-offset-1 about-desc medium-col-12 col-5 inlined">
             <h2 class="blue product-title title-font col-16">who i am</h2>
             <p class="thin product-description col-16">
-                <span class=blue>tl;dr learn a lot, learn fast</span> ->
-                what i admire in others is also what i aspire towards. problem is there is too much to admire. i dabble in many different roles in attempt to be a skilled developer, a musician, a designer, a teammate, a storyteller, an athelete, a leader, and 50 more things. it may be impossible but learning to fail well is just another on the list. time's ticking.
+                <span class="blue normal">tl;dr learn a lot, learn fast</span> ->
+                what i admire in others is also what i aspire towards, and there is just so much to admire. beyond my <a href='#work' class="gray no-decoration">work</a> as a developer, i dabble in several different roles in attempt to be a skilled musician, designer, teammate, storyteller, athelete, leader, and 50 more things. it may be impossible, but learning to fail well is also another on the list. time's ticking.
             </p>
         </div>
+        <div class="clear col-offset-1 col-14 medium-col-12 medium-col-offset-2 ">
+            <h2 class="blue product-title title-font col-16">how i work</h2>
+            <p class="thin product-description col-16">
+                <span class="blue normal">tl;dr be scrappy + collaborate</span> -> i am scrappy when it comes to getting work done, but if time permits, i'll be preoccupied in getting all the details right. i enjoy a team setting with a difficult problem. each member brings a new perspective and together we create well rounded solutions.
+                
+            </p>
+        </div>
+        <div class="clear col-offset-1 col-14 medium-col-12 medium-col-offset-2 ">
+            <h2 class="blue product-title title-font col-16">what i do</h2>
+            <p class="thin product-description col-16">
+                <span class="blue normal">tl;dr cs at northwestern + freelance</span> ->
+                i am a computer science major in the engineering school at northwestern university. i also handle development for several organizations and am always looking for an interesting freelance project.  take a look at my most recent <a href='#work' class="normal green">work</a> and let's <a href=#contact class="normal orange">connect</a>!
+                
+            </p>
+        </div>
+        
         <div class="meta-wrap col-16">
-            <h5 class="col-offset-1 col-14 meta blue medium title-font">meta log</h5>
-            <p class="thin col-offset-1 col-14"><span class="blue">update 12/14/16</span> -> now you can check out the escape itinerary generator. go easy on the 'test it' button though, aws ec2 instances aren't that expensive until they are &#128513.</p>
-            <p class="thin col-offset-1 col-14"><span class="blue">update 12/3/16</span> -> i've been conflicted between being concise and personal. the current iteration of this site is an attempt to express what i've been upto, what i believe in, and what i aspire towards through colorful design. it can always use some work, so i'll do my best to keep working. </p>
+            <h5 class="col-offset-1 col-14 meta blue medium title-font"><a ng-click=metalog() >meta</a>{{log}}</h5>
+            <p class="thin col-offset-1 col-14" ng-repeat="update in updates" ><span class="blue">update {{update.date}}</span> -> {{update.note}}<span ng-bind-html="update.emoji">{{update.emoji}}</span></p>
         </div>
     </div>
 </section>

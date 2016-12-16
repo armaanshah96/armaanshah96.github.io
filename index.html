@@ -14,7 +14,8 @@
           <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <script src="script.js"></script>
     <script src="/bower_components/ngSmoothScroll/lib/angular-smooth-scroll.js"></script>
-      
+    <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+
       
 <!--      GOOGLE ANALYTICS -->
       <script>
@@ -29,7 +30,7 @@
 </script>
 <!--                       -->
     </head>
-  <body ng-controller="mainController">
+  <body ng-controller="aboutController">
       <div class="navbar gray-border">
         <nav >
             <ul >
@@ -38,11 +39,12 @@
                 <li class=navstyle><a href="https://github.com/armaanshah96"><img class="icon" src="./img/social-icons/github.png" > </a></li>
                 <li class=navstyle><a href="mailto:armaanshah96@gmail.com"><img class="icon" src="./img/social-icons/mailbox.png" > </a></li>
 <!--                <li class=navstyle><a href="https://www.facebook.com/armaan.shah.77"><img class="icon" src="./img/social-icons/facebook.png" > </a></li>-->
-                <li class="navstyle right"><a class=no-decoration href='#about'><h3 class="blue medium nav-name">armaan shah</h3></a></li>
+                <li class="navstyle right"><a class=no-decoration href='#/'><h3 class="blue medium nav-name">armaan shah</h3></a></li>
             </ul>
         </nav>
       </div>
-      <div ng-view></div>
+      
+      <div ng-view autoscroll></div>
 
       
   </body>
