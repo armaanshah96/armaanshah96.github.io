@@ -80,7 +80,7 @@ ul {
 .cta {
     background-color: white;
     border-radius: 5px;
-    font-size:1.6rem;
+    font-size:1.4rem;
     color: #828282;
 }
 
@@ -191,7 +191,6 @@ section {
 }
 
 .product-img {
-    margin:3rem 0;
     border-radius:5px;
 }
 
@@ -205,6 +204,7 @@ section {
 
 .hidden-wrap {
     display: inline-block;
+    margin:3em 0;
 }
 
 .about-desc {
@@ -231,7 +231,7 @@ section {
 }
 
 .product-description {
-    font-size:1.6em;
+    font-size:1.5em;
 }
 
 /*****************************************************        CONTENT SECTION     */
@@ -265,6 +265,15 @@ section {
 
 .contact-logo {
     padding:3em 2em;
+}
+
+.contact-logo > a img:hover {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .works {
@@ -379,6 +388,7 @@ footer h6 {
 .col-14 {width: 87.5%;}
 .col-15 {width: 93.75%;}
 .col-16 {width: 100%;}
+.col-17 {width:110%;}
 
 /* LEFT offest */
 .col-offset-16 {margin-left: 100%;}
@@ -439,10 +449,13 @@ footer h6 {
     .product-description {
         font-size:1em;
     }
+    .cta {
+        font-size:1.3rem;
+    }
 }
 
 @media screen and (max-width:800px) {
-    .product-img {
+    .hidden-wrap {
 /*      cannot change margin with one statement*/
         margin-top:2.5rem;
         margin-bottom: 2.5rem;
@@ -484,7 +497,7 @@ footer h6 {
         width:75%;
     }
     
-    .product-img {
+    .hidden-wrap {
         margin-bottom: 1rem;
     }
 /*
@@ -514,13 +527,10 @@ footer h6 {
         float:left;
         margin-right:0;
     }
-    .product-title {
-        font-size:1.6em;
-    }
+
     .meta {
         font-size: 1em;
     }
-    
 }
 
 @media screen and (max-width:470px) {
