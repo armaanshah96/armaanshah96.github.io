@@ -77,23 +77,23 @@ ul {
     list-style: none;
 }
 
-button {
+.cta {
     background-color: white;
     border-radius: 5px;
-    font-size:1.5rem;
+    font-size:1.6rem;
     color: #828282;
 }
 
-button:hover {
+.cta:hover {
     -webkit-transition: all 700ms ease;
     -moz-transition: all 700ms ease;
     -o-transition: all 700ms ease;
     transition: all 700ms ease;
-    background-color: #8916CC;
+    background-color: #1d84b5;
     color: white;
     cursor:pointer;
 }
-button:focus {
+.cta:focus {
     outline:0;
 }
 /*****************************************************        Font-Sizes     */
@@ -140,6 +140,9 @@ p {
 }
 .normal {
     font-weight: 400;
+}
+.normal-thick {
+    font-weight:500;
 }
 .medium {
     font-weight:600;
@@ -192,8 +195,12 @@ section {
     border-radius:5px;
 }
 
+.product-img-hover {
+    border: 3px solid #fff;
+}
+
 .product-img-hover:hover {
-    border:5px solid #e7e7e7;
+    border:3px solid #e7e7e7;
 }
 
 .hidden-wrap {
@@ -206,7 +213,7 @@ section {
 }
 
 .about-text {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .product {

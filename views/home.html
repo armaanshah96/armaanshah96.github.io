@@ -1,7 +1,7 @@
 <section class=clearfix id=content>
     <div class="col-14 main-text">
-        <h1 class="primary">armaan shah</h1>
-        <h3 class=subtitle><a href='#/' class=purple>hi</a>, my name is <a href='#/' class="no-decoration gray">armaan</a>.  take a <a href='#work' class="gray medium no-decoration">look</a> at my work. drop a line. let's <a href='#contact' class=orange>collaborate</a>.</h3>
+<!--        <h1 class="primary">armaan shah</h1>-->
+        <h3 class=subtitle>hi, my name is <a href='#/' class="blue">armaan</a>.  take a <a href='#work' class="gray medium no-decoration">look</a> at my work. drop a line. let's <a href='#contact' class=orange>collaborate</a>.</h3>
         <ul class="works inlined col-16">
             <li class="work-logo col-3 inlined"><a href='#work' scroll-to="dwsite"><img  src="img/logos/dwlogo.png" class=col-7></a></li>
             <li class="work-logo col-3 inlined"><a href='#work' scroll-to='escape'><img  src="img/logos/escape-logo.png" class=col-6></a></li>
@@ -17,14 +17,18 @@
 <section class=clearfix id=dwsite> 
     <div class="site-section col-offset-1  inlined col-14 red-border">
 <!--        <img class="logo-tag" src="img/logos/dwlogo.png">-->
-        <div class="hidden-wrap left medium-col-offset-2 col-offset-1 medium-col-12 col-7"><a target=_blank href="http://www.designworks.nu"><img  src="img/portfolio/DWImage.png" class="product-img-hover product-img col-16 gray-border "></a></div>
+        <div class="hidden-wrap left medium-col-offset-2 col-offset-1 medium-col-12 col-7"><a target=_blank href="http://www.designworks.nu"><img  src="img/portfolio/DWImage.png" class="product-img-hover product-img col-16"></a></div>
         <div class="medium-col-offset-2 col-offset-1 product medium-col-12 col-6 inlined">
-            <a target=_blank href="http://www.designworks.nu" class=no-decoration><h2 class="red product-title col-16">designworks</h2></a>
+            <h2 class="red product-title col-16">designworks</h2>
             <h5 class="thin product-description col-16">
-                <span class="blue normal">front-end developer </span>-> the business of our sales and the creativity of our design expressed as a direct, to-the-point <span class=blue>website</span> (with a colorful personality) <br><br>
-                <span class=blue>inspiration </span>-> designworks had a goal to move away from conventional web design and an ambition to push what unconventional could be. thus this new website. the 'unconventional' ideas in that site helped to create this one.
+                <span class="normal-thick">the gist - </span> the business of our sales and the creativity of our design expressed as a direct, to-the-point <span class=normal>website</span> (with a colorful personality) <br><br>
+                <span class=normal-thick>inspiration - </span> designworks had a goal to move away from conventional web design and an ambition to push what unconventional could be. thus this new website. the 'unconventional' ideas in that site helped create this one.
+<!--                front-end developer-->
+<!--                <br><br>-->
+<!--                <span class="normal-thick">tag - </span>front-end developer-->
+
             </h5>
-            <p></p>
+            <a target=_blank href="http://www.designworks.nu" class="cta generate-button no-decoration aligned blue-border col-8 normal-thick" type="button">go to site</a>
         </div>
     </div>  
 </section>
@@ -35,20 +39,19 @@
         <div class="hidden-wrap right product-img rcol-offset-1 rmedium-col-offset-2 rmedium-col-12 col-7 right">
             <h6 class=normal>{{name}}</h6>
             <div class="col-16 gray-border normal escape-event" ng-repeat="event in newItinerary">
-                <span class=medium>{{event.Tag}}</span> from {{event.StartTime}} to {{event.EndTime}} at <span class="medium blue">{{event.Events}}</span>
+                <span class=normal>{{event.Tag}}</span> from {{event.StartTime}} to {{event.EndTime}} at <span class="normal-thick">{{event.Events}}</span>
             </div>
             
         </div>
         <div class="medium-col-offset-2 col-offset-1 product medium-col-12 col-6 inlined">
-            <a href="" class=no-decoration ng-click=generate()><h2 class="purple product-title col-16">escape</h2></a>
+            <h2 class="purple product-title col-16">escape</h2>
             <h5 class="thin product-description col-16">
-                <span class="blue normal">manager + developer </span>-> an itinerary generator to make the most of each day in Cape Town, South Africa all packaged into an <span class=blue>API</span> for easy access
-                <button class="generate-button purple-border col-8 thin " type="button" ng-click="generate()">test it</button>
-                <span class=blue>background </span>-> my favorite project to date. 4 days and a small team to scrape travel websites, create a database, write procedures to make itineraries, and bundle it all up on an ec2 instance. 
+                <span class="normal-thick">the gist - </span> an itinerary generator to make the most of each day in Cape Town, South Africa all packaged into an <span class=normal>API</span> for easy access
+                <br><br>
+                <span class=normal-thick>background - </span> my favorite project to date. 4 days and a small team to scrape travel websites, create a database, write procedures to make itineraries, and bundle it all up on an ec2 instance. 
             </h5>
-            
-            
-            <p></p> 
+<!--            manager + developer  -->
+            <button class="cta generate-button blue-border col-8 normal " type="button" ng-click="generate()">test it here</button>
         </div>
 <!--
         <div class=hidden-wrap><a href="https://github.com/gauravsk3/escape_datascience"><img src="img/portfolio/escape.png" class="product-img rcol-offset-1 rmedium-col-offset-2 rmedium-col-12 col-7 gray-border right"></a></div>
@@ -60,15 +63,16 @@
 <section class=clearfix id=metrics>   
     <div class="site-section col-offset-1 inlined col-14 orange-border">
 <!--        <img src="img/logos/metrics-logo.png" class="logo-tag">-->
-        <div class="hidden-wrap left medium-col-offset-2 col-offset-1 medium-col-12 col-7"><a target=_blank href="https://ashah.shinyapps.io/DwDashboard/"><img src="img/portfolio/kpidash.png" class="product-img-hover product-img col-16  gray-border inlined "></a></div>
+        <div class="hidden-wrap left medium-col-offset-2 col-offset-1 medium-col-12 col-7"><a target=_blank href="https://ashah.shinyapps.io/DwDashboard/"><img src="img/portfolio/kpidash.png" class="product-img-hover product-img col-16 inlined "></a></div>
         <div class="medium-col-offset-2 col-offset-1 product medium-col-12 col-6 inlined">
-            <a target=_blank href="https://ashah.shinyapps.io/DwDashboard/" class=no-decoration><h2 class="orange product-title col-16">kpi dashboard</h2></a>
+            <h2 class="orange product-title col-16">kpi dashboard</h2>
             <h5 class="thin product-description col-16">
-                <span class="blue normal">data analytics developer </span>-> a dashboard to track all financial and sales metrics for designworks. tabulated and visualized in an <span class=blue>R shiny app</span> <span class=normal>(with example data).</span>
+                <span class="normal-thick">the gist - </span> a dashboard to track all financial and sales metrics for designworks. tabulated and visualized in an <span class=normal>R shiny app</span> <span class=normal>(with example data).</span>
                 <br><br>
-                <span class=blue>inspiration </span>-> designworks uses a saas that will test just about anyone's patience. after quite a bit of data cleaning, manipulating, and visualizing this dashboard was deployed. 
+                <span class=normal-thick>inspiration - </span> designworks uses a saas that will test just about anyone's patience. after quite a bit of data cleaning, manipulating, and visualizing this dashboard was deployed. 
             </h5>
-            <p></p>
+            <a target=_blank href="https://ashah.shinyapps.io/DwDashboard/" class="cta generate-button no-decoration aligned blue-border col-8 normal-thick" type="button">go to dash</a>
+<!--            data analytics developer-->
         </div>
     </div>  
 </section>
@@ -76,14 +80,17 @@
 <section class=clearfix id=curate>   
     <div class="site-section col-offset-1 inlined col-14 green-border">
 <!--        <img src="img/logos/curate-logo.png" class="logo-tag">-->
-        <div class="right rcol-offset-1 rmedium-col-offset-2 rmedium-col-12 col-7"><a target=_blank  href="https://github.com/armaanshah96/cuRate"><img  src="img/portfolio/curate.png" class="product-img-hover product-img col-16 gray-border inlined "></a></div>
+        <div class="right rcol-offset-1 rmedium-col-offset-2 rmedium-col-12 col-7"><a target=_blank  href="https://github.com/armaanshah96/cuRate"><img  src="img/portfolio/curate.png" class="product-img-hover product-img col-16 inlined "></a></div>
         <div class="medium-col-offset-2 col-offset-1 product medium-col-12 col-6 inlined">
-            <a target=_blank href="https://github.com/armaanshah96/cuRate" class=no-decoration><h2 class="green product-title col-16">curate</h2></a>
+            <h2 class="green product-title col-16">curate</h2>
             <h5 class="thin product-description col-16">
-                <span class="blue normal">developer </span>-> get your daily bite-sized update on your favorite twitter handles in your very own channel via <span class=blue>slack webhook</span>.
+                <span class="normal-thick">the gist - </span> get your daily bite-sized update on your favorite twitter handles in your very own channel via <span class=normal>slack webhook</span>.
                 <br><br>
-                <span class=blue>inspiration </span>-> the election was red hot news this summer, but i felt so distant while abroad in cape town. two friends and i created cuRate to output the most favorited tweet from each specified twitter handle into our slack. i woke up everyday, read my quick snippet, and continued on my day feeling well-informed.
+                <span class=normal-thick>inspiration - </span> the election was red hot news this summer, but i felt so distant while abroad in cape town. two friends and i created cuRate to output the most favorited tweet from each specified twitter handle into our slack. i woke up everyday, read my quick snippet, and continued on my day feeling well-informed.
             </h5>
+            <a target=_blank href="https://github.com/armaanshah96/cuRate" class="cta generate-button no-decoration aligned blue-border col-8 normal-thick" type="button">go to code</a>
+
+<!--            developer-->
             <p></p>
         </div>
     </div>  

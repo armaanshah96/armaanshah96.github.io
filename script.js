@@ -55,7 +55,11 @@ app.controller('mainController', function($scope, $location, $anchorScroll, $htt
             $scope.newItinerary = response.data;
         }).catch(function(response) {
             $scope.error = response.data.message;
+            $scope.newItinerary = [{"Tag":"","StartTime":"hmm, that's strange. it looks like there's some error with the aws server. let me look into it and have it up and running by tomorrow! sorry about that.", "EndTime": "", "Events":""}];
         });
+        if($scope.error) {
+            
+        }
     }
 });
 app.controller('aboutController', function($scope) {
